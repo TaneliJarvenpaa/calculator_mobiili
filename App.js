@@ -19,15 +19,13 @@ export default function App() {
     const num1 = parseFloat(number1);
     const num2 = parseFloat(number2);
 
-    if (!isNaN(num1) && !isNaN(num2)) {
-      if (operator === '+') {
-        setResult((num1 + num2).toString());
-      } else if (operator === '-') {
-        setResult((num1 - num2).toString());
-      }
-    } else {
-      setResult('Invalid input');
+     
+    if (operator === '+') {
+      setResult((num1 + num2).toString());
+    } else if (operator === '-') {
+      setResult((num1 - num2).toString());
     }
+    
   };
 
   return (
